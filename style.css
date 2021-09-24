@@ -1,4 +1,11 @@
-.box1 {
+.box-box,
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.box1,
+.box2 {
   display: none;
 
   background-color: #FF0000;

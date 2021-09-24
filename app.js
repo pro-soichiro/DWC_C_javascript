@@ -10,3 +10,14 @@ $(function(){
     $('.box1').slideUp();
   },2000);
 });
+
+// Answer
+$(function (){
+  $('.box2').slideDown(function (){
+    $('.box2').css({
+      'background-color': '#0000FF',
+      'width': '200px',
+      'height': '100px'
+    }).slideUp();
+  });
+});
