@@ -11,9 +11,10 @@ $(function(){
   },2000);
 });
 
-// Answer
+// クリックイベントによって前回の処理が行われるようにする
 $(function (){
-  $('.box2').slideDown(function (){
+  $('.box2').slideDown();
+  $('.box2').on('click',function(){
     $('.box2').css({
       'background-color': '#0000FF',
       'width': '200px',
@@ -21,3 +22,4 @@ $(function (){
     }).slideUp();
   });
 });
+
