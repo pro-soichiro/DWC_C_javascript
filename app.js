@@ -54,7 +54,17 @@ function winLose(user, js){
     } else if(js == "パー"){
       winLoseStr = "あいこ";
     }
+  } else if(user == null) {
+    if (!alert("またチャレンジしてね")){
+      window.location.reload();
+      exit;
+    };
+  } else {
+    if(!alert("グー・チョキ・パーのいずれかを入力してください")){
+      window.location.reload();
+      exit;
+    };
   }
-
   return winLoseStr;
 }
+window.location.reload();
